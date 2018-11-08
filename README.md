@@ -85,7 +85,7 @@ We follow 12 Factor principles when building new applications. You can find out 
 Following these principles allows our applications to be platform agnostic, meaning we're not tied down to running them on any specific vendor's platform, and don't have to make changes to application code in order to migrate them somewhere else.
 
 ## Containers
-
+++Pull address for Docker Image
 We use Docker containers when building new applications to allow them to be run anywhere without tedious environment set up. We run the both in development and in hosted environments, such as production environments.
 
 We define `Dockerfile`s for each of our applications, generally building from a base language specific image, installing necessary system tools for our application to run, copying files onto the image and compiling the application. The built image can then be used in both development and production, as well as other hosted environments.
